@@ -1,0 +1,8 @@
+.body {
+  min-height: 15vh;
+}
+
+.heart {
+  height: 200px;
+  width: 200px;
+}
