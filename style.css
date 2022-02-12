@@ -3,6 +3,20 @@
 }
 
 .heart {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
+  mix-blend-mode: multiply;
+  transform: translateX(-50px);
+}
+
+.custom-font {
+  font-family: "Redressed", cursive;
+}
+
+.bg-color {
+  background-color: pink;
+}
+
+.footer {
+  height: 50vh;
 }

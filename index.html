@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Heart Miner</title>
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+  <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
@@ -25,29 +27,42 @@
     outline-offset: -3px;
   }
 </style>
-<body class="debug">
+<body class="">
     <header class="container-fluid bg-danger text-light text-center">
-        <h2 class="p-3 m-0">Heart Miner</h2>
+        <h2 class="p-3 m-0 custom-font">Heart Miner</h2>
     </header> 
 
-    <main class="container-fluid">
+    <main class="container-fluid bg-color">
         <div class="row">
             <div class="col-md-4">
-                <div>Arrows: <span id="arrows">0</span>
-                <button class="btn btn-success p-1 m-1" onclick="buyArrows()">BUY</button>
-                </div>
-                <div>Love Bombs: <span id="lovebombs">0</span><button class="btn btn-success p-1 m-1" onclick="buyLoveBombs()">BUY</button></div>
-                <div>Cupids: <span id="cupids">0</span> <button class="btn btn-success p-1 m-1" onclick="buyCupids()">BUY</button> </div>
-                <div>Sirens: <span id="sirens">0</span><button class="btn btn-success p-1 m-1" onclick="buySirens()">BUY</button></div>
+                
+               
             </div>
             <div class="col-md-4 text-center"><h1 onclick="mineHearts()"><img class="heart" src="https://st.depositphotos.com/1060145/1342/v/600/depositphotos_13426811-stock-illustration-big-red-heart.jpg" alt="heart"></h1>
             </div>
-            <div class= "col-md-4 text-center">Hearts: <span id="hearts">0</span>
+            <div class= "col-md-4 text-center custom-font"><h1>Hearts: <span id="hearts">0</span></h1>
             </div>
             
         </div>
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <div>
+              <h2 class="custom-font text-dark"> Arrows: <span id="arrows">0</span></h2>
+              <button class="btn btn-danger  m-1 custom-font" type="button" onclick="buyArrows()"><h4>Upgrade</h4></button>
+            </div>
+            <div><h2 class="custom-font">Love Bombs: <span id="lovebombs">0</span></h2><button class="btn btn-danger  m-1 custom-font"
+                onclick="buyLoveBombs()"><h4>Upgrade</h4></button></div>
+          </div>
+          <div class="col-md-6 text-center">
+            <div><h2 class="custom-font">Cupids: <span id="cupids">0</span></h2> <button class="btn btn-danger  m-1 custom-font"
+                onclick="buyCupids()"><h4>Upgrade</h4></button> </div>
+            <div><h2 class="custom-font">Sirens: <span id="sirens">0</span></h2><button class="btn btn-danger m-1 custom-font"
+                onclick="buySirens()"><h4>Upgrade</h4></button></div>
+          </div>
+        </div>
 
     </main>
+<footer class="bg-color"></footer>
 
 
 
@@ -58,7 +73,6 @@
 
 
 
-</main>
 
     
 
